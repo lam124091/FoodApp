@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edtCK"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PaymentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/textViewPaymentMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Thanh Toán qua WalletPay"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewBankCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewPaymentMethod"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Thẻ ngân hàng"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewCardID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewBankCard"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="CardID"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtCartID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewBankCard"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/textViewCardID"
+            android:hint="Nhập CardID" />
+
+        <TextView
+            android:id="@+id/textViewExpiryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtCartID"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Ngày hết hạn"
+            android:textSize="16sp" />
+
+        <CalendarView
+            android:id="@+id/dtpDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewExpiryDate"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/textViewCardHolderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dtpDate"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Họ và tên chủ thẻ"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCardHolderName"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Nhập Họ và tên" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCardHolderName"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="55dp"
+            android:text="Địa chỉ đăng kí"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCardHolderName"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Nhập địa chỉ" />
+
+        <TextView
+            android:id="@+id/textViewPostalCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtAddress"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Mã bưu chính"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtAddress"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Nhập mã bưu chính" />
+
+        <TextView
+            android:id="@+id/textViewDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtCode"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Tạm tính:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtTempTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtCode"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/textViewDiscount"
+            android:text="100,000 VNĐ"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewDiscountTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDiscount"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Chiết khấu (5%):"
+            android:textColor="#FF0000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDiscount"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/textViewDiscountTitle"
+            android:text="20,000 VNĐ"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/textViewTotalAmountTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDiscountTitle"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Tổng số tiền thanh toán:"
+            android:textColor="#FF0000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTotalAmountTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Tổng số tiền: 100,000 VNĐ"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTotalAmountTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="Xin vui lòng kiểm tra lại thông tin"
+            android:textColor="#FF0000"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMessage"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#FF5722"
+            android:text="Hủy"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMessage"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@id/btnCancel"
+            android:backgroundTint="#4CAF50"
+            android:text="Tiếp tục"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</ScrollView>

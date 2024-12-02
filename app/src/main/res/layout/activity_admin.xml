@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Activity.AdminActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/mainbackground"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"> <!-- Đặt LinearLayout căn giữa theo chiều dọc -->
+
+        <Button
+            android:id="@+id/btnQuanLyFood"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Food Manager" /> <!-- Đặt layout_weight cho Button -->
+
+        <Button
+            android:id="@+id/btnQuanLyCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Category Manager"
+            android:layout_weight="1" /> <!-- Đặt layout_weight cho Button -->
+
+        <Button
+            android:id="@+id/btnQuanLyCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:text="Customer Manager" /> <!-- Đặt layout_weight cho Button -->
+
+        <Button
+            android:id="@+id/btnQuanLyInvoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:text="Invoice Manager" /> <!-- Đặt layout_weight cho Button -->
+    </LinearLayout>
+
+</RelativeLayout>

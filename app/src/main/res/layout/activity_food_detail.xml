@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FoodDetailActivity">
+
+    <ImageView
+        android:id="@+id/imgFood"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="190dp"
+        android:scaleType="centerCrop"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imgFood"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-198dp"
+        >
+
+        <TextView
+            android:id="@+id/txtFoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgFood"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="230dp"
+            android:text="Tên Món Ăn"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFoodName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="31dp"
+            android:layout_marginLeft="-110dp"
+            android:text="Giá"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rclFoodSize"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="272dp"
+        android:text="Description"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtFoodCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkLikes"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="282dp"
+        android:text="Phân loại món ăn" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rclFoodSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="299dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFoodCategory"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="363dp"
+        android:text="Size" />
+
+    <CheckBox
+        android:id="@+id/chkLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgFood"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="303dp"
+        android:text="Đã thích" />
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgFood"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="432dp"
+        android:layout_marginEnd="13dp"
+        android:text="Thêm vào giỏ hàng" />
+
+
+</RelativeLayout>

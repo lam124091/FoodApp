@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activity.CustomerProfileActivity">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="62dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="203dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="85dp"
+        android:text="CẬP NHẬT THÔNG TIN"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginTop="16dp"
+        android:text="Tên:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_toEndOf="@id/textView1"
+        android:layout_alignBaseline="@id/textView1"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/txtCustomerName"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_toEndOf="@id/textView10"
+        android:layout_alignBaseline="@id/textView10"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/txtAddress"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/txtPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_toEndOf="@id/textViewPhoneNumber"
+        android:layout_alignBaseline="@id/textViewPhoneNumber"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/txtPhoneNumber"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_toEndOf="@id/textViewEmail"
+        android:layout_alignBaseline="@id/textViewEmail"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mật khẩu:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/txtEmail"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_toEndOf="@id/textViewPassword"
+        android:layout_alignBaseline="@id/textViewPassword"
+        android:layout_marginStart="8dp"/>
+
+    <Button
+        android:id="@+id/btnAnHien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPassword"
+        android:layout_alignStart="@+id/txtPassword"
+        android:layout_marginTop="16dp"
+        android:text="Hiện/Ẩn Mật khẩu" />
+
+    <Button
+        android:id="@+id/btnSua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAnHien"
+        android:layout_alignStart="@+id/btnAnHien"
+        android:layout_marginTop="5dp"
+        android:text="Cập Nhật Thông Tin" />
+
+
+</RelativeLayout>

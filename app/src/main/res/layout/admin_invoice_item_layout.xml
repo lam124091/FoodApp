@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+
+    <!-- TextView cho Invoice ID -->
+    <TextView
+        android:id="@+id/tvInvoiceIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invoice ID:"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInvoiceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123456"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/tvInvoiceIdLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView cho Customer Name -->
+
+    <TextView
+        android:id="@+id/tvCustomerNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Customer Name:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInvoiceId" />
+
+    <TextView
+        android:id="@+id/tvCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        app:layout_constraintStart_toEndOf="@+id/tvCustomerNameLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvCustomerNameLabel" />
+
+    <!-- TextView cho Date -->
+
+    <TextView
+        android:id="@+id/tvDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Date:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCustomerName" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2024-05-05"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        app:layout_constraintStart_toEndOf="@+id/tvDateLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvDateLabel" />
+
+    <!-- TextView cho Payment Method -->
+
+    <TextView
+        android:id="@+id/tvPaymentMethodLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Payment Method:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+    <TextView
+        android:id="@+id/txtPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit Card"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        app:layout_constraintStart_toEndOf="@+id/tvPaymentMethodLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvPaymentMethodLabel" />
+
+    <!-- TextView cho Total Money -->
+
+    <TextView
+        android:id="@+id/tvTotalMoneyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Total Money:"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPayment" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$1000"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvTotalMoneyLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvTotalMoneyLabel" />
+
+    <!-- TextView cho Status -->
+
+    <TextView
+        android:id="@+id/tvStatusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="Status:"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotal" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paid"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvStatusLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvStatusLabel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

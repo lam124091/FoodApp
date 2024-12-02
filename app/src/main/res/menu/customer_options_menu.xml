@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mnuViewProfile"
+        android:title="View Profile"/>
+    <item
+        android:id="@+id/mnuHistory"
+        android:title="Lịch Sử Mua Hàng" />
+    <item
+        android:id="@+id/mnuLogout"
+        android:title="Logout"/>
+</menu>
